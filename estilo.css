@@ -93,3 +93,34 @@ img
     margin-right: auto;
     width:80%;
 }
+@media only screen and (max-width: 700px) {
+    #contenedorGeneral
+    {
+        width: 85vw;
+        grid-template-columns: auto auto;
+    }
+    h1
+{
+    font-size: 1.5em;
+}
+h2
+{
+    font-size: 1em;
+}
+#littleText
+{
+    font-size: 0.8em;
+}
+.download
+{
+    font-size: 1em;
+}
+iframe
+{
+    width: 90%;
+}
+img
+{
+    width: 70%;
+} 
+}
