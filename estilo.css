@@ -1,0 +1,95 @@
+@font-face {
+    font-family: lovelo;
+    src: url(https://www.fontfabric.com/fonts/lovelo/);
+  }
+body
+{
+    background-image:  url("./Imagenes/fondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+#contenedorGeneral
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    background-color:rgba(3, 2, 1, 0.8);
+
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "ecoLogo NextTitle"
+                        "welcomeText welcomeText" 
+                        "Download Download"
+                        "seccion1 seccion2"
+                        "seccion3 seccion4";
+
+    row-gap: 20px;
+    padding: 5%;
+}
+
+.contenedorP
+{
+    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Open Sans', sans-serif;
+}
+h1
+{
+    font-size: 3.5em;
+    font-family: 'Open Sans', sans-serif;
+    
+    margin-bottom: 0;
+}
+h2
+{
+    margin-top: 0;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+#littleText
+{
+    font-size: 1.3em;
+}
+img
+{
+    width: 17vw;
+}
+.welcome
+{
+    grid-area: welcomeText;
+    font-size: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.download
+{
+    grid-area: Download;
+    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #a5823e;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    font-size: 1.3em;
+    border: none;
+
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.seccion
+{
+   position: relative;
+   left: 7%;
+    
+}
+.seccion iframe
+{
+   
+    font-display: none;
+    margin-left:auto ;
+    margin-right: auto;
+    
+}
