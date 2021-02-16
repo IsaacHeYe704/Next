@@ -19,10 +19,11 @@ body
 
     display: grid;
     grid-template-columns: 20vw auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: "ecoLogo NextTitle"
                         "welcomeText welcomeText" 
                         "Download Download"
+                        "primero primero"
                         "seccion1 seccion2"
                         "seccion3 seccion4";
 
@@ -63,6 +64,11 @@ img
     margin-left: auto;
     margin-right: auto;
 }
+.miraPrimero
+{
+    grid-area: primero;
+    text-align: center;
+}
 .download
 {
     grid-area: Download;
@@ -82,7 +88,7 @@ img
 .seccion
 {
    position: relative;
-   left: 7%;
+   
     
 }
 .seccion iframe
@@ -129,3 +135,4 @@ img
     text-decoration:none;
     color:black;
 }
+
