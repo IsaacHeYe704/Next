@@ -22,7 +22,6 @@ body
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: "ecoLogo NextTitle"
                         "welcomeText welcomeText" 
-                        "Download Download"
                         "primero primero"
                         "seccion1 seccion2"
                         "seccion3 seccion4";
@@ -63,27 +62,7 @@ img
     font-size: 1.3em;
     margin-left: auto;
     margin-right: auto;
-}
-.miraPrimero
-{
-    grid-area: primero;
     text-align: center;
-}
-.download
-{
-    grid-area: Download;
-    font-family: 'Anonymous Pro', monospace;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #a5823e;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: fit-content;
-    font-size: 1.3em;
-    border: none;
-
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .seccion
 {
@@ -97,8 +76,39 @@ img
     font-display: none;
     margin-left:auto ;
     margin-right: auto;
-    width:80%;
+    
 }
+.seccion p
+{
+   text-align: center;
+   width: 80%;
+}
+.miraPrimero
+{
+    grid-area: primero;
+    text-align: center;
+}
+.miraPrimero p
+{
+    width: 100%;
+} 
+.download
+{
+    
+    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #a5823e;
+    
+    width: 80%;
+    font-size: 1em;
+    border: none;
+
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 @media only screen and (max-width: 700px) {
     #contenedorGeneral
     {
@@ -106,29 +116,33 @@ img
         grid-template-columns: auto auto;
     }
     h1
-{
-    font-size: 1.5em;
-}
-h2
-{
-    font-size: 1em;
-}
-#littleText
-{
-    font-size: 0.8em;
-}
-.download
-{
-    font-size: 1em;
-}
-iframe
-{
-    width: 90%;
-}
-img
-{
-    width: 70%;
-} 
+    {
+        font-size: 1.5em;
+    }
+    h2
+    {
+        font-size: 1em;
+    }
+    .welcome
+    {
+        font-size: 0.8em;
+    }
+    #littleText
+    {
+        font-size: 0.8em;
+    }
+    .download
+    {
+        font-size: 0.9em;
+    }
+    iframe
+    {
+        width: 90%;
+    }
+    img
+    {
+        width: 70%;
+    } 
 }
 .download a
 {
